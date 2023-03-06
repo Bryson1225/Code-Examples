@@ -1,0 +1,3 @@
+C:/Users/mster/CLionProjects/GameOfLife23/cmake-build-debug/CMakeFiles/GameOfLife23.dir
+C:/Users/mster/CLionProjects/GameOfLife23/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mster/CLionProjects/GameOfLife23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
