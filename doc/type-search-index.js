@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"view","l":"GameWindow.AnimateBomb"},{"p":"tools","l":"Board"},{"p":"view","l":"GameWindow"},{"p":"tools","l":"Loc"},{"p":"controller","l":"MinesweeperController"},{"p":"model","l":"MinesweeperModel"},{"p":"view","l":"OptionsWindow"}];updateSearchResults();
