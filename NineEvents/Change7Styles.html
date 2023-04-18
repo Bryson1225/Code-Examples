@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change 7 Styles</title>
+</head>
+<body>
+<p id="text">Click this text</p>
+<hr>
+<div id="toChange">
+Change innerHTML, font 24px,<br>
+border 5px, width 300px, <br>
+float right, padding 50px, background? <br>
+You guess.
+</div>
+
+
+<script>
+	let block = document.getElementById("toChange");
+	document.getElementById("text").addEventListener("click", (event) => loadStyle());
+
+function loadStyle(){
+	block.style.backgroundColor = "lightgrey";
+	block.style.fontSize = "24px";
+	block.style.float = "right";
+	block.style.padding = "50px";
+	block.style.borderStyle = "solid";
+	block.style.borderColor = "red";
+	block.style.color = "green";
+	block.innerHTML = "CHECK THIS OUT!"
+}
+
+</script>
+</body>
+</html>

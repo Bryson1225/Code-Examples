@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add to Array</title>
+</head>
+<body>
+Enter a name: <input id="input"> <br>
+The array of names:
+<div id = "toChange"></div>
+<script>
+let x = [];
+document.getElementById("input").addEventListener("change", (event) => change());
+function change() {
+	var name = document.getElementById("input").value;
+	document.getElementById("input").value = "";
+	x.push(name);
+	document.getElementById("toChange").innerHTML = "";
+	for (var i = 0; i < x.length; i++) {
+		document.getElementById("toChange").innerHTML += (i+1) + ") " + x[i] + "<br>";
+	}
+}
+
+</script>
+</body>
+</html>

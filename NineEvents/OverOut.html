@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Over Out</title>
+</head>
+<style>
+.hover {
+	background-color: red;
+	border: solid;
+	border-color: black;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+}
+</style>
+
+<body>
+<div id="hoverOver" class="hover"> Hover over Me</div>
+<br>
+<div id="toChange" class="hover"></div>
+<script>
+let eventCount = 0;
+document.getElementById("hoverOver").addEventListener("mouseover", (event) => change());
+document.getElementById("hoverOver").addEventListener("mouseout", (event) => change());
+function change() {
+	if (eventCount % 2 == 0) {
+		document.getElementById("toChange").innerHTML = "Entered " + eventCount + " events"
+		eventCount++;
+	} else {
+		document.getElementById("toChange").innerHTML = "Exited " + eventCount + " events"
+		eventCount++;
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Intro.html - Bryson Mineart</title>
+</head>
+<style>
+button {
+	margin: 5px;
+}
+.top{
+	text-align: center;
+	background-color: blue;
+	height: 50px;
+	margin: 5px;
+	color: white;
+}
+.bottom {
+	text-align: center;
+	background-color: blue;
+	height: 30px;
+	margin: 5px;
+	color: white
+}
+.buttons {
+	float: left;
+	padding: 10px;
+	background-color: lightgrey;
+	width: 200px;
+	border: solid;
+	height: 578px;
+	
+}
+</style>
+<div class="top">
+	<h1>Using JavaScript to Change the HTML</h1>
+</div>
+<body>
+<div class="buttons">
+	<button id = "home"># HOME #</button> <br>
+	<button id="0">0) Calculator</button> <br>
+	<button id="1">1) Hide / Show</button> <br>
+	<button id="2">2) Change 7 Styles</button> <br>
+	<button id="3">3) Add to Array</button> <br>
+	<button id="4">4) Over Out</button> <br>
+	<button id="5">5) Grow Image</button> <br>
+	<button id="6">6) Pixel Increase</button> <br>
+	<button id="7">7) Running Sum</button> <br>
+	<button id="8">8) Stack Changes</button> <br>
+</div>
+<iframe
+id="section" src="intro.html" width="900px" height="600px">
+</iframe>
+<div class="bottom">
+	<h3>Author: Bryson Mineart</h3>
+</div>
+<script>
+let frame = document.getElementById("section");
+document.getElementById("0").addEventListener("click", (event) => load('eventCalculator.html'));
+document.getElementById("home").addEventListener("click", (event) => load('intro.html'));
+document.getElementById("1").addEventListener("click", (event) => load('Hide&Show.html'));
+document.getElementById("2").addEventListener("click", (event) => load('Change7Styles.html'));
+document.getElementById("3").addEventListener("click", (event) => load('AddToArray.html'));
+document.getElementById("4").addEventListener("click", (event) => load('OverOut.html'));
+document.getElementById("5").addEventListener("click", (event) => load('GrowImage.html'));
+document.getElementById("6").addEventListener("click", (event) => load('PixelIncrease.html'));
+document.getElementById("7").addEventListener("click", (event) => load('RunningSum.html'));
+document.getElementById("8").addEventListener("click", (event) => load('stack.html'));
+function load(page) {
+	frame.src = page;
+}
+</script>
+</body>
+</html>

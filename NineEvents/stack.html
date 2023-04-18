@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stack</title>
+</head>
+<body>
+Push <input id="input">
+<button id="pop">pop</button>
+<div id="toChange"></div>
+<script>
+let x = [];
+document.getElementById("input").addEventListener("change", (event) => push());
+document.getElementById("pop").addEventListener("click", (event) => pop());
+
+function push() {
+	var element = document.getElementById("input");
+	var value = element.value;
+	element.value = "";
+	x.push(value);
+	var str = "<ul>\n";
+	for (var i = (x.length-1); i>=0;i--) {
+		str+= "<li>" + x[i] + "</li>\n";
+	}
+	str+= "</ul>\n";
+	document.getElementById("toChange").innerHTML = str;
+} function pop(){
+	x.pop();
+	var str = "<ul>\n";
+	for (var i = (x.length-1); i>=0;i--) {
+		str+= "<li>" + x[i] + "</li>\n";
+	}
+	str+= "</ul>\n";
+	document.getElementById("toChange").innerHTML = str;
+}
+
+</script>
+</body>
+</html>

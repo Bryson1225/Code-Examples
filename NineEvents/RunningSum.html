@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Running Sum</title>
+</head>
+<body>
+Enter a number: <input id="input"> <br>
+<div id="toChange"></div>
+<script>
+let x = [];
+let summ = 0;
+document.getElementById("input").addEventListener("change", (event) => sum());
+
+function sum() {
+	var element =  document.getElementById("input");
+	var num = Number(element.value);
+	element.value = "";
+	x.push(num);
+	summ+=num;
+	document.getElementById("toChange").innerHTML = "sum of ";
+	for (var i = 0; i < x.length; i++) {
+		if (i == (x.length-1)) {
+			document.getElementById("toChange").innerHTML += (x[i] + " ");
+		} else {
+			document.getElementById("toChange").innerHTML += (x[i] + ", ");
+		}
+	}
+	document.getElementById("toChange").innerHTML += ("= " + summ);
+}
+</script>
+
+</body>
+</html>

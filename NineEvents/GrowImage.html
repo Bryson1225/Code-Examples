@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grow Image</title>
+</head>
+<body>
+<img id="image" alt="Audi RS6" src="image/AudiRS6.jpg" width="60px" height="50px">
+<script>
+	document.getElementById("image").addEventListener("click", (event) => growImage());
+function growImage(){
+	var block = document.getElementById("image");
+	var width = Number(block.clientWidth);
+	block.style.width = (width + 10) + "px";
+	var height = Number(block.clientHeight);
+	block.style.height = (height + 5) + "px";
+}
+</script>
+	
+
+</body>
+</html>

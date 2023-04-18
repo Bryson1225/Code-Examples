@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hide / Show</title>
+</head>
+<body>
+<button id="update">Hide</button>
+
+<div id="toChange">Click the button to hide this text.</div>
+<script>
+document.getElementById("update").addEventListener("click", (event) => change());
+
+function change() {
+	var element = document.getElementById("toChange");
+	if (document.getElementById("update").innerHTML == "Hide") {
+		element.innerHTML = ""
+		document.getElementById("update").innerHTML = "Show"
+	} else {
+		element.innerHTML = "Click the Button to Show this text";
+		document.getElementById("update").innerHTML = "Hide"
+	}
+}
+</script>
+</body>
+</html>

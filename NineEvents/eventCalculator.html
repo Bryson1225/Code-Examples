@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bryson Mineart</title>
+</head>
+<body>
+
+x <input id="first"> <br>
+y <input id="last"> <br>
+<br>
+<button onclick="calculate()">Show results</button>
+<br>
+
+<div id="toChange"></div>
+<script>
+function calculate(){
+	str = "";
+	var x = document.getElementById("first");
+	var y = document.getElementById("last");
+	var element = document.getElementById("toChange");
+	var num1 = Number(x.value);
+	var num2 = Number(y.value);	
+	
+	str+= num1 + " + " + num2 + " = " + (num1 + num2) + "<br>";
+	str+= num1 + " - " + num2 + " = " + (num1 - num2) + "<br>";
+	str+= num1 + " * " + num2 + " = " + (num1 * num2) + "<br>";
+	str+= num1 + " / " + num2 + " = " + (num1 / num2) + "<br>";
+	str+= num1 + " % " + num2 + " = " + (num1 % num2);
+	element.innerHTML = str;
+	
+}
+
+</script>
+
+
+</body>
+</html>
