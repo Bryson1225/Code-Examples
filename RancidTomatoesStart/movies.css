@@ -1,0 +1,124 @@
+/* Author: Bryson Mineart
+Class: CSC 337 - Assignment 5
+Desc: This is the css class for the tmntGrid html file.
+ */
+
+body {
+	background-image: url("images/moviebg.png");
+}
+
+img {
+   vertical-align: top;
+   margin-right: 5px;
+}
+dt, dd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+dt {
+	padding-top: 7px;
+	font-weight: bold;
+}
+dl {
+	margin: 0px;
+}
+.top {
+	background-image: url("images/rancidbannerbg.png");
+    height: 50px;
+}
+
+.shadow {
+	text-align: center;
+	font-family: "Georgia", sans-serif;
+	font-size: 24pt;
+	text-shadow: 3px 3px gray;
+}
+
+.grid-container {
+	display: grid;
+	background-color: lightgray;
+	border: darkgray 2px solid;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px gray;
+	overflow: hidden;
+	margin: auto;
+	width: 940px;
+	height: 1000px;
+}
+
+.grid-item {
+	text-align: left;
+}
+
+.rating {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	width: 700px;
+	height: 83px;
+	margin: auto;
+	background-image: url("images/rottenlargebg.png");
+	margin-top: 0px;
+}
+.ratingText {
+	padding-top: 44px;
+	font-size: 3em;
+	color:red;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.overviewImage {
+	grid-row: 1 / span 2;
+	grid-column: 3;
+	width: 250px;
+	height: 412px;
+	margin: -5px;
+}
+.reviewsLeft {
+	grid-row: 2 /span 2;
+	grid-column: 1;
+	width: 330px;
+	padding: 3px;
+	height: 980;
+	margin-left: 5px;
+	margin-top: -3px;
+}
+.reviewsRight {
+	grid-row: 2 /span 2;
+	grid-column: 2;
+	width: 330px;
+	padding: 3px;
+	height: 980;
+	margin-top: -3px;
+}
+.review {
+	background-color: white;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: darkgray;
+	padding: 14px;
+	/* width: 295px; */
+	max-width: 310px;  
+	min-height: 25px;
+	font-size: 0.9em;
+	font-family: Georgia, "Times New Roman";
+}
+.reviewer {
+	height: 40px;
+	width: 295px;
+	font-size: 0.9em;
+    margin-top: -10px;
+}
+.overview {
+	grid-column: 3;
+	grid-row: 3 / span 1;
+	width: 250px;
+	height: 588px;
+	background-color: #8FBC8F;
+	padding: 7px;
+	font-size: 1em;
+	overflow: hidden;
+	margin: -5px;
+}
