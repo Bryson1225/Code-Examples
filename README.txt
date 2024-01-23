@@ -1,6 +1,4 @@
-This repository houses a few code examples from myself. I attempted to include code examples from a multitude of different languages 
-but I am sure that I am forgetting some. Feel free to reach out to me (brysonmineart@arizona.edu) if you are interested in viewing more
-examples of my work or a more thorough explanation of the projects included.
+This repository houses a few code examples from myself. I attempted to include code examples from a multitude of different languages but I am sure that I am forgetting some. Feel free to reach out to me (brysonmineart@arizona.edu) if you are interested in viewing more examples of my work or a more thorough explanation of the projects included.
 
 GameOfLife23:
   - Language: C++
