@@ -30,6 +30,4 @@ zstr.c:
   - Language: C
   - Contents: This program is used to almost mimic a string within C. The code will show dynamic space allocation, pointers, and more.
 
-To finish the code examples off, I work at the Southwest Climate Adaptation Science Center as a website manager which has given me ample amounts of experience with Drupal,
-scripting, communication, organization, and much more. In the last year we went through a website transition, I lead this transition as we conducted content audits, redesign,
-and more. View the website at this link: https://www.swcasc.arizona.edu/
+To finish the code examples off, I worked at the Southwest Climate Adaptation Science Center as a website manager which has given me ample amounts of experience with Drupal, scripting, communications, organization, and much more. In the last year we went through a website transition, I lead this transition as we conducted content audits, redesign, and more. View the website at this link: https://www.swcasc.arizona.edu/
